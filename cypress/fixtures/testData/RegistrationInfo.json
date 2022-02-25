@@ -1,0 +1,20 @@
+[
+    {  
+        "vehicle type": "Car/Truck",
+        "vehicle type value":"10",
+        "vehicle identification": "Registration number",
+        "vehicle identification value":"registrationNumber",
+        "number": "xux999",
+        "registration status":"Vehicle registered"
+    },
+    {  
+        "vehicle type": "Car/Truck",
+        "vehicle type value":"10",
+        "vehicle identification": "Registration number",
+        "vehicle identification value":"registrationNumber",
+        "number": "xux888",
+        "registration status":"Registration cancelled"
+    }
+]
+   
+ 

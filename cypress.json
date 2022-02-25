@@ -1,0 +1,11 @@
+{  
+    "baseUrl": "https://service.vic.gov.au/find-services/transport-and-driving/registration/check-registration",
+    "chromeWebSecurity": false,
+    "watchForFileChanges": false,
+    "defaultCommandTimeout": 5000,
+    "maxWaitTimeout": 5000,
+    "screenshotOnRunFailure": true,
+    "integrationFolder": "cypress/test/uitest",
+    "fixturesFolder": "cypress/fixtures"
+
+}

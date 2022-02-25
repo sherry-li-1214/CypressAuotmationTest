@@ -1,0 +1,45 @@
+{
+    "name": "cypressBDDTest",
+    "version": "1.0.0",
+    "description": "UI & API Automation Testing using cypress and cucumber framework",
+    "main": "index.js",
+    "contributor": "",
+    "scripts": {
+        "cypress:open": "cypress open",
+        "deleteUIReports": "del-cli --force cypress/Reports/UIReports",
+        "ui-test-all": "npm run deleteUIReports & cypress run --config-file cypress/config/uiconfig.json --browser chrome --headed & node cypress/support/cucumber-html-report.js",
+        "ui-test:headless": "npm run deleteUIReports & cypress run --config-file cypress/config/uiconfig.json --browser chrome --headless & node cypress/support/cucumber-html-report.js",
+        "ui-test:withTags": "npm run deleteUIReports & npx cypress-tags run -e TAGS=\"@registration\" --browser chrome --headed --env automationType=ui & node cypress/support/cucumber-html-report.js"
+    },
+    "author": "Sherry li",
+    "license": "ISC",
+    "dependencies": {
+        "cucumber": "^7.0.0-rc.0",
+        "cypress": "^9.5.0",
+        "cypress-cucumber-preprocessor": "^4.3.1",
+        "nvm": "^0.0.4"
+    },
+    "cypress-cucumber-preprocessor": {
+        "nonGlobalStepDefinitions": false,
+        "step_definitions": "cypress/test/uitest/step_definitions",
+        "nonGlobalStepBaseDir": "cypress/test/uitest/step_definitions",
+        "cucumberJson": {
+            "generate": true,
+            "outputFolder": "cypress/reports/UIReports/cucumber-json",
+            "filePrefix": "",
+            "fileSuffix": ".cucumber"
+        }
+    },
+    "devDependencies": {
+        "cypress-tags": "^0.3.0",
+        "cypress-xpath": "^1.6.2",
+        "deepmerge": "^4.2.2",
+        "del-cli": "^4.0.1",
+        "mochawesome": "^7.0.1",
+        "mochawesome-merge": "^4.2.1",
+        "mochawesome-report-generator": "^6.0.1",
+        "multiple-cucumber-html-reporter": "^1.18.3",
+        "random-email": "^1.0.3",
+        "typescript": "^4.5.5"
+    }
+}

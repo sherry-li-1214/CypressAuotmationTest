@@ -1,0 +1,163 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "End to end registration status validation",
+    "line": 3,
+    "id": "end-to-end-registration-status-validation",
+    "tags": [
+      {
+        "name": "@registration",
+        "line": 1
+      }
+    ],
+    "uri": "checkVehicleRegistration.feature",
+    "elements": [
+      {
+        "id": "end-to-end-registration-status-validation;check-registered-vehicle-registration-via-registration-information",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Check Registered Vehicle registration via registration information",
+        "tags": [
+          {
+            "name": "@registration",
+            "line": 1
+          },
+          {
+            "name": "@Regression",
+            "line": 6
+          },
+          {
+            "name": "@postive",
+            "line": 6
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am in the vehicle registration check page",
+            "result": {
+              "status": "passed",
+              "duration": 12624000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I click Get Started",
+            "result": {
+              "status": "passed",
+              "duration": 22053000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I fill in vechile information from data file with status \"Vehicle registered\"",
+            "result": {
+              "status": "passed",
+              "duration": 672000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I continute to check my registration",
+            "result": {
+              "status": "passed",
+              "duration": 800000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should be able to get my registration information as expected",
+            "result": {
+              "status": "passed",
+              "duration": 4962000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "end-to-end-registration-status-validation;negative-test---check-invalid-vehicle-registration-via-registration-information",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Negative Test - Check invalid Vehicle registration via registration information",
+        "tags": [
+          {
+            "name": "@registration",
+            "line": 1
+          },
+          {
+            "name": "@Regression",
+            "line": 16
+          },
+          {
+            "name": "@ng",
+            "line": 16
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "I am in the vehicle registration check page",
+            "result": {
+              "status": "passed",
+              "duration": 30776000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "I click Get Started",
+            "result": {
+              "status": "passed",
+              "duration": 15953000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I fill in vechile information from data file with status \"Registration cancelled\"",
+            "result": {
+              "status": "passed",
+              "duration": 843000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "I continute to check my registration",
+            "result": {
+              "status": "passed",
+              "duration": 1151000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I should be able to get my registration information as expected",
+            "result": {
+              "status": "passed",
+              "duration": 3283000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
